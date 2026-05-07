@@ -40,7 +40,7 @@ export default function CardScreen ({ gameMode, onClick }) {
         <div className="card-container">
             {cards.map(elem => {
                 return (
-                <div key={elem.uuid} className="card" onClick={onClick}>
+                <div key={elem.uuid} className="card" onClick={() => onClick(elem.uuid)}>
                     <img src={elem.thumbnail} />
                     {matchFields(elem)[gameMode]}
                 </div>

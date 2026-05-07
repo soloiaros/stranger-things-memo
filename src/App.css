@@ -47,6 +47,35 @@
   font-size: 4rem;
 }
 
+header {
+  padding: 1rem;
+}
+
+header img {
+  height: 250px;
+  width: auto;
+  object-fit: contain;
+  color: var(--os-text);
+}
+
+header {
+  h1, h2, h3, p {
+    margin-block: 5px;
+  }
+}
+
+header h1 {
+  font-size: 2.8rem;
+}
+
+header h2 {
+  font-size: 2.4rem;
+}
+
+header h3 {
+  font-size: 2rem;
+}
+
 nav {
   font-size: 2rem;
 }
