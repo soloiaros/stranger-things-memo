@@ -35,7 +35,7 @@ function App() {
       <div className="section-divider"></div>
       <ScoreScreen bestScore={bestScore} currScore={currScore} />
       <div className="section-divider"></div>
-      <CardScreen onClick={handleCardSelection} />
+      <CardScreen gameMode={gameMode} onClick={handleCardSelection} />
     </>
   )
 }

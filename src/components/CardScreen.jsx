@@ -1,28 +1,48 @@
 import { useEffect, useState } from "react";
 
-export default function CardScreen ({ onClick }) {
+const endpoints = {
+    characters: 'https://hawapi.theproject.id/api/v1/characters?size=20',
+    locations: 'https://hawapi.theproject.id/api/v1/locations?size=20'
+}
+
+const schemas = {
+    characters: ['uuid', 'first_name', 'last_name', 'thumbnail', 'birth_date'],
+    locations: ['uuid', 'name', 'description', 'thumbnail'],
+}
+
+const matchFields = (elem) => { return {
+    characters: (
+        <>
+        <p>{elem.first_name} {elem.last_name}</p>
+        <p>{elem.birth_date}</p>
+        </>
+    ),
+    locations: (
+        <>
+        <p>{elem.name}</p>
+        <p>{elem.description}</p>
+        </>
+    )
+}}
+
+export default function CardScreen ({ gameMode, onClick }) {
     const [cards, setCards] = useState([])
 
     useEffect (() => {
-        fetch('https://hawapi.theproject.id/api/v1/characters?size=20')
+        fetch(endpoints[gameMode])
             .then(resp => resp.json())
-            .then(resp => setCards(resp.map(char => { return {
-                id: char.uuid,
-                name: `${char.first_name} ${char.last_name}`,
-                thumbnail: char.images[0],
-                birthDate: char.birth_date,
-            }}
-            )));
-    }, [])
+            .then(resp => setCards(resp.map(elem => {return Object.fromEntries(
+                schemas[gameMode].map(property => [property, elem[property]])
+            )})));
+    }, [gameMode])
 
     return (
         <div className="card-container">
-            {cards.map(char => {
+            {cards.map(elem => {
                 return (
-                <div key={char.id} className="card" onClick={onClick}>
-                    <img src={char.thumbnail} alt={char.name + "'s portrait"} />
-                    <p className="name">{char.name}</p>
-                    <p className="birthday">{char.birthDate}</p>
+                <div key={elem.uuid} className="card" onClick={onClick}>
+                    <img src={elem.thumbnail} />
+                    {matchFields(elem)[gameMode]}
                 </div>
                 )
             })}
