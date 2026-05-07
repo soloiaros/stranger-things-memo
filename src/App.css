@@ -68,7 +68,7 @@ header {
   padding: 1rem;
 }
 
-header img {
+header .decorative img {
   height: 250px;
   width: auto;
   object-fit: contain;
@@ -79,6 +79,8 @@ header {
   h1, h2, h3, p {
     margin-block: 5px;
   }
+
+  position: relative;
 }
 
 header h1 {
@@ -91,6 +93,21 @@ header h2 {
 
 header h3 {
   font-size: 2rem;
+}
+
+header .functional-links {
+  display: flex;
+  gap: .84rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding-top: 1.65rem;
+}
+
+header .functional-links img {
+  height: 1.8rem;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(52%) sepia(65%) saturate(4288%) hue-rotate(91deg) brightness(115%) contrast(116%);
 }
 
 nav {
