@@ -25,6 +25,17 @@ const matchFields = (elem) => { return {
     )
 }}
 
+function shuffle(arr) {
+    const shuffled = [...arr];
+    
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    return shuffled;
+}
+
 export default function CardScreen ({ gameMode, onClick }) {
     const [cards, setCards] = useState([])
 
@@ -38,7 +49,7 @@ export default function CardScreen ({ gameMode, onClick }) {
 
     return (
         <div className="card-container">
-            {cards.map(elem => {
+            {shuffle(cards).map(elem => {
                 return (
                 <div key={elem.uuid} className="card" onClick={() => onClick(elem.uuid)}>
                     <img src={elem.thumbnail} />
