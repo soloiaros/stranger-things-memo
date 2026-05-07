@@ -32,6 +32,7 @@ function App() {
   return (
     <>
       <div className="overlay"></div>
+      <div className="scanline"></div>
       <Header />
       <NavigationBar onClick={handleModeSwitch} />
       <div className="section-divider"></div>
