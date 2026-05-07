@@ -3,6 +3,7 @@ import Header from './components/Header'
 import NavigationBar from './components/NavigationBar'
 import ScoreScreen from './components/ScoreScreen'
 import CardScreen from './components/CardScreen'
+import DialogBox from './components/DialogBox'
 import './App.css'
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <ScoreScreen bestScore={bestScore[gameMode]} currScore={currScore} />
       <div className="section-divider"></div>
       <CardScreen gameMode={gameMode} onClick={handleCardSelection} />
+      <DialogBox />
     </>
   )
 }

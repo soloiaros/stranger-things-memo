@@ -104,6 +104,10 @@ header .functional-links {
   padding-top: 1.65rem;
 }
 
+header .functional-links button {
+  all: unset;
+}
+
 header .functional-links img {
   height: 1.8rem;
   width: auto;
@@ -173,4 +177,44 @@ nav h2 {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-inline: 6px;
+}
+
+dialog {
+  max-width: 500px;
+  border: 5px solid darkgray;
+  padding: 0;
+}
+
+dialog .upper-bar {
+  background-color: darkgray;
+  color: var(--os-background);
+  height: 23px;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: .84rem;
+  align-items: center;
+  user-select: none;
+  cursor: move;
+}
+
+dialog .upper-bar button {
+  all: unset;
+  width: 9px;
+  height: 9px;
+  cursor: pointer;
+}
+
+dialog .upper-bar button img {
+  width: 9px;
+  height: 9px;
+}
+
+dialog .info-section {
+  background-color: var(--os-background);
+  color: var(--os-text);
+}
+
+dialog .info-section h2 {
+  margin: 0;
+  padding: 0;
 }

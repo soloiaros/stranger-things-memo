@@ -16,7 +16,7 @@ export default function Header () {
             </div>
             <div className="functional-links">
                 <a href="https://github.com/soloiaros/stranger-things-memo" target='_blank'><img src={GHIcon} alt="GitHub repositoty of the project" /></a>
-                <a href="#"><img src={CreditsIcon} alt="View credentials" target='_blank' /></a>
+                <button commandfor="attrib-dialog" command="show-modal"><img src={CreditsIcon} alt="View credentials" target='_blank' /></button>
             </div>
         </header>
     )
