@@ -183,6 +183,16 @@ dialog {
   max-width: 500px;
   border: 5px solid darkgray;
   padding: 0;
+  position: absolute;
+  
+}
+
+dialog::backdrop {
+  background-color: transparent;
+}
+
+html:has(dialog[open]) {
+  overflow: hidden;
 }
 
 dialog .upper-bar {
@@ -199,8 +209,8 @@ dialog .upper-bar {
 
 dialog .upper-bar button {
   all: unset;
-  width: 9px;
-  height: 9px;
+  width: 23px;
+  height: 23px;
   cursor: pointer;
 }
 
