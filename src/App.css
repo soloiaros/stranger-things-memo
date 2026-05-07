@@ -68,6 +68,10 @@ header {
   padding: 1rem;
 }
 
+header .decorative {
+  pointer-events: none;
+}
+
 header .decorative img {
   height: 250px;
   width: auto;
@@ -158,6 +162,7 @@ nav h2 {
 .card {
   height: 340px;
   border: 5px solid var(--os-border);
+  cursor: url('./assets/custom-cursors/Select.cur'), pointer;
 }
 
 .card:hover {
@@ -177,6 +182,7 @@ nav h2 {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-inline: 6px;
+  pointer-events: none;
 }
 
 dialog {
@@ -204,14 +210,14 @@ dialog .upper-bar {
   padding-inline: .84rem;
   align-items: center;
   user-select: none;
-  cursor: move;
+  cursor: url('./assets/custom-cursors/Move.cur'), move;
 }
 
 dialog .upper-bar button {
   all: unset;
   width: 23px;
   height: 23px;
-  cursor: pointer;
+  cursor: url('./assets/custom-cursors/Select.cur'), pointer;
 }
 
 dialog .upper-bar button img {
