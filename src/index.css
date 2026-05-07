@@ -3,7 +3,7 @@
 body {
   --os-text: #00dd00;
   --os-background: #383838;
-  --os-borders: #b1c4c8;
+  --os-border: #b1c4c8;
   margin: 0;
   background: var(--os-background);
 	color: var(--os-text);
@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 1.8rem;
+}
+
 p {
   margin: 0;
+  font-size: 1.4rem;
 }

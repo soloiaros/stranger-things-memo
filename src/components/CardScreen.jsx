@@ -13,14 +13,14 @@ const schemas = {
 const matchFields = (elem) => { return {
     characters: (
         <>
-        <p>{elem.first_name} {elem.last_name}</p>
-        <p>{elem.birth_date}</p>
+        <p>name: {elem.first_name} {elem.last_name}</p>
+        <p>birth_date: {elem.birth_date}</p>
         </>
     ),
     locations: (
         <>
-        <p>{elem.name}</p>
-        <p>{elem.description}</p>
+        <p>addr.: {elem.name}</p>
+        <p>note: {elem.description}</p>
         </>
     )
 }}
