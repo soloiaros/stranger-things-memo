@@ -1,16 +1,27 @@
-# React + Vite
+# 📂 HAWKINS PD - Intelligence Database (Memory Game)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Application Screenshot](path/to/screenshot.png)
 
-Currently, two official plugins are available:
+## 🕵️ Mission Overview
+Welcome to the Hawkins Police Department digital archive. This system, salvaged from the mid-80s, contains sensitive identity files on individuals of interest. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a Stranger Things-themed memory game that I built to practice React concepts such as useEffect and useRef. The interface is styled as a vintage 80s operating system, blending the game mechanics with the aesthetic of Hawkins PD personnel records.
 
-## React Compiler
+## 🕹️ How to Play
+Choose a topic, and try to choose as much cards as you can without selecting one twice! The cards are constantly being shuffled for you to not have such an easy time.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ System Specifications
+Built with a focus on state management and component architecture:
+- **Framework:** [React 19](https://reactjs.org/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** Custom CSS designed to mimic a CRT-era terminal.
 
-## Expanding the ESLint configuration
+## 📜 Attributions & Inspiration
+Special thanks to the following contributors for providing resources and inspiration:
+- **Styling:** macktropolis on CodePen
+- **Icons:** Bakunetsu Kaito on TheNounProject
+- **Cursors:** Jeelh on Itch.io
+- **Data:** Lucas Josino ([HawAPI](https://hawapi.thestrangerthingsapi.com/))
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+*Property of Hawkins Police Department. Confidential.*
