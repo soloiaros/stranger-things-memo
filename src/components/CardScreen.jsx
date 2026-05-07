@@ -20,9 +20,7 @@ export default function CardScreen ({ onClick }) {
             {cards.map(char => {
                 return (
                 <div key={char.id} className="card" onClick={onClick}>
-                    <div className="thumbnail-container">
-                        <img src={char.thumbnail} alt={char.name + "'s portrait"} />
-                    </div>
+                    <img src={char.thumbnail} alt={char.name + "'s portrait"} />
                     <p className="name">{char.name}</p>
                     <p className="birthday">{char.birthDate}</p>
                 </div>

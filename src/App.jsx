@@ -20,6 +20,7 @@ function App() {
 ;
   return (
     <>
+      <div className="overlay"></div>
       <ScoreScreen bestScore={bestScore} currScore={currScore} />
       <CardScreen onClick={handleCardSelection} />
     </>

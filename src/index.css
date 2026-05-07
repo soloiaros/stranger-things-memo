@@ -1,16 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
 body {
+  --os-text: #00dd00;
+  --os-background: #383838;
+  --os-borders: #b1c4c8;
   margin: 0;
+  background: var(--os-background);
+	color: var(--os-text);
+  font-family: 'VT323', Courier;
+  margin: 0;
+  padding: 0;
 }
 
 #root {
   box-sizing: border-box;
+  isolation: isolate;
+  width: 100%;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
 }
 
 p {
