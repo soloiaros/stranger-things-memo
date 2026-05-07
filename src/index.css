@@ -17,10 +17,15 @@ body {
   isolation: isolate;
   width: 100%;
   padding: 1rem;
+  cursor: url('./assets/custom-cursors/mo.cur'), auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover {
+  cursor: url('./assets/custom-cursors/Text\ Select.cur'), auto;
 }
 
 h2 {
@@ -32,6 +37,9 @@ p {
   font-size: 1.4rem;
 }
 
+a, button, button > img {
+  cursor: url('./assets/custom-cursors/Select.cur'), pointer;
+}
 
 @keyframes flicker {
 		0% { opacity: 0.15795 }

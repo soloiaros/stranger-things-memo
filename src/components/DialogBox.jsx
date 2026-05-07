@@ -50,7 +50,8 @@ export default function DialogBox () {
             <div className="info-section">
                 <h2>Thanks for providing resources and inspiration!</h2>
                 <p>Styling: macktropolis on CodePen</p>
-                <p>Icons: Bakunetsu Kaito from TheNounProject</p>
+                <p>Icons: Bakunetsu Kaito on TheNounProject</p>
+                <p>Cursors: Jeelh on Itch.io</p>
                 <p>Data: Lucas Josino (HawAPI)</p>
             </div>
         </dialog>
