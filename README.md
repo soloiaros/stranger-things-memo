@@ -1,6 +1,6 @@
 # 📂 HAWKINS PD - Intelligence Database (Memory Game)
 
-![Application Screenshot](path/to/screenshot.png)
+<img width="1582" height="950" alt="Application Screenshot" src="https://github.com/user-attachments/assets/034da3a8-bd38-4f9d-a2af-aeb92beb83d4" />
 
 ## 🕵️ Mission Overview
 Welcome to the Hawkins Police Department digital archive. This system, salvaged from the mid-80s, contains sensitive identity files on individuals of interest. 
